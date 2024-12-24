@@ -1,0 +1,15 @@
+services:
+  minecraft:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    container_name: server-vanilla
+    command: /launch.sh
+    ports:
+      - 25565:25565
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./server:/server
+    working_dir: /server
