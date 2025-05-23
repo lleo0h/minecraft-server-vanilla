@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: dockerfile
     container_name: server-vanilla
-    command: /launch.sh
+    command: /entrypoint.sh
     ports:
       - 25565:25565
     restart: always

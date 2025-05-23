@@ -1,5 +1,5 @@
 FROM openjdk:21-jdk
 
-COPY launch.sh /
+COPY entrypoint.sh /
 
-RUN chmod +x /launch.sh
+RUN chmod +x /entrypoint.sh
